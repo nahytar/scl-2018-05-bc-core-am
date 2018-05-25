@@ -1,6 +1,8 @@
 #titulo {
     text-align: center;
     background-color: white;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 #content {
@@ -9,6 +11,7 @@
 }
 #posiciones {
     margin: 10px 0;
+     margin-bottom: 80px;
 }
 
 #areaDecodificado {
@@ -34,5 +37,5 @@ body {
 
 button, textarea, input, #titulo {
     border-radius: 7px; 
-    box-shadow: 14px -12px 23px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 3px 19px 9px rgba(0,0,0,0.81);
 }

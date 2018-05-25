@@ -6,7 +6,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <section id="content">
+    <header>
+    <h1 id="titulo">Codificador y Decodificador de Mensajes</h1>
+  </header>
+  
+  <div id="posiciones">
+    <!--Boton de numeros a correr-->
+    <button id="button-posiciones">Espacios a desplazar</button>
+    <input id="inputPosiciones" type="text">
+  </div>
+  <div>
+    <textarea id="areaDecodificado" rows="4" cols="50"></textarea>
+    <button id="buttonReversible"><img src="img/flechas.png" alt="ejecutar"></button>
+    <textarea id="areaCodificado" rows="4" cols="50"></textarea>
+  </div>
+  </section>
+  <!--DIV que va a traer la informacion del dom NO BORRAR-->
   <div id="root"></div>
 
   <script src="cipher.js"></script>

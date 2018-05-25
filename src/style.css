@@ -39,3 +39,7 @@ button, textarea, input, #titulo {
     border-radius: 7px; 
     box-shadow: 6px 3px 19px 9px rgba(0,0,0,0.81);
 }
+
+#inputPosiciones {
+    width: 50px;
+}

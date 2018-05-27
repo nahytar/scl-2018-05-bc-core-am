@@ -15,11 +15,13 @@
 }
 
 #areaDecodificado {
-    float: left;    
+    float: left; 
+    resize: none;   
 }
 
 #areaCodificado {
     float: right;
+    resize: none;
 }
 
 body {
@@ -33,6 +35,11 @@ body {
 #buttonReversible {
     background-color: white;
     margin: 0 7%;
+}
+
+#buttonReversible:hover {
+    background-color: rgb(102, 179, 230);
+    box-shadow: 10px 3px 19px 9px rgba(0,0,0,0.81);
 }
 
 button, textarea, input, #titulo {

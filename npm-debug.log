@@ -1,0 +1,165 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   '-g',
+1 verbose cli   'install',
+1 verbose cli   'nvm' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'nvm', null ]
+7 verbose cache add spec nvm
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'nvm',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'nvm',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed nvm@*
+10 verbose addNamed "*" is a valid semver range for nvm
+11 silly addNameRange { name: 'nvm', range: '*', hasData: false }
+12 silly mapToRegistry name nvm
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/nvm
+16 verbose addNameRange registry:https://registry.npmjs.org/nvm not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/nvm
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 00:41:23
+20 verbose request id c5487bd2158ae7c9
+21 http request GET https://registry.npmjs.org/nvm
+22 http 200 https://registry.npmjs.org/nvm
+23 verbose headers { date: 'Wed, 30 May 2018 04:41:24 GMT',
+23 verbose headers   'content-type': 'application/json; charset=UTF-8',
+23 verbose headers   'transfer-encoding': 'chunked',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie': [ '__cfduid=dd3d9116da8a8cc0e97c72c61e80e6bef1527655283; expires=Thu, 30-May-19 04:41:23 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'cf-cache-status': 'REVALIDATED',
+23 verbose headers   'cf-ray': '422e87332e15bada-SCL',
+23 verbose headers   etag: 'W/"40783923be89d0447f2704e9b55d3c58"',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'last-modified': 'Sun, 27 May 2018 10:53:43 GMT',
+23 verbose headers   vary: 'accept-encoding, accept',
+23 verbose headers   server: 'cloudflare',
+23 verbose headers   'content-encoding': 'gzip' }
+24 silly get cb [ 200,
+24 silly get   { date: 'Wed, 30 May 2018 04:41:24 GMT',
+24 silly get     'content-type': 'application/json; charset=UTF-8',
+24 silly get     'transfer-encoding': 'chunked',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie': [ '__cfduid=dd3d9116da8a8cc0e97c72c61e80e6bef1527655283; expires=Thu, 30-May-19 04:41:23 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'cf-cache-status': 'REVALIDATED',
+24 silly get     'cf-ray': '422e87332e15bada-SCL',
+24 silly get     etag: 'W/"40783923be89d0447f2704e9b55d3c58"',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'last-modified': 'Sun, 27 May 2018 10:53:43 GMT',
+24 silly get     vary: 'accept-encoding, accept',
+24 silly get     server: 'cloudflare',
+24 silly get     'content-encoding': 'gzip' } ]
+25 verbose get saving nvm to /home/malguzt/.npm/registry.npmjs.org/nvm/.cache.json
+26 silly addNameRange number 2 { name: 'nvm', range: '*', hasData: true }
+27 silly addNameRange versions [ 'nvm', [ '0.0.3', '0.0.4' ] ]
+28 silly addNamed nvm@0.0.4
+29 verbose addNamed "0.0.4" is a plain semver version for nvm
+30 warn deprecated nvm@0.0.4: This is NOT the correct nvm. Visit http://nvm.sh and use the curl command to install it.
+31 silly mapToRegistry name nvm
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/nvm
+35 verbose addRemoteTarball https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz',
+36 verbose addRemoteTarball   '38a178e9d31b283508c92d15c9da861d1a9210bc' ]
+37 info retry fetch attempt 1 at 00:41:24
+38 info attempt registry request try #1 at 00:41:24
+39 http fetch GET https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz
+40 http fetch 200 https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz
+41 silly fetchAndShaCheck shasum 38a178e9d31b283508c92d15c9da861d1a9210bc
+42 verbose addTmpTarball /tmp/npm-9664-cb4a37f5/registry.npmjs.org/nvm/-/nvm-0.0.4.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for nvm@0.0.4
+44 silly cache afterAdd nvm@0.0.4
+45 verbose afterAdd /home/malguzt/.npm/nvm/0.0.4/package/package.json not in flight; writing
+46 verbose afterAdd /home/malguzt/.npm/nvm/0.0.4/package/package.json written
+47 silly install resolved [ { name: 'nvm',
+47 silly install resolved     version: '0.0.4',
+47 silly install resolved     description: 'Please use http://nvm.sh instead',
+47 silly install resolved     dependencies: {},
+47 silly install resolved     devDependencies: {},
+47 silly install resolved     bin: { nvm: './bin/nvm' },
+47 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+47 silly install resolved     repository: { type: 'git', url: 'git://github.com/creationix/nvm.git' },
+47 silly install resolved     keywords: [ 'local', 'node' ],
+47 silly install resolved     author: { name: 'Jordan Harband', email: 'ljharb@gmail.com' },
+47 silly install resolved     license: 'http://wtfpl.org/',
+47 silly install resolved     bugs: { url: 'https://github.com/creationix/nvm/issues' },
+47 silly install resolved     homepage: 'https://github.com/creationix/nvm#readme',
+47 silly install resolved     _id: 'nvm@0.0.4',
+47 silly install resolved     _shasum: '38a178e9d31b283508c92d15c9da861d1a9210bc',
+47 silly install resolved     _from: 'nvm@*',
+47 silly install resolved     _npmVersion: '3.10.3',
+47 silly install resolved     _nodeVersion: '6.3.1',
+47 silly install resolved     _npmUser: { name: 'ljharb', email: 'ljharb@gmail.com' },
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: '38a178e9d31b283508c92d15c9da861d1a9210bc',
+47 silly install resolved        tarball: 'https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz' },
+47 silly install resolved     maintainers: [ [Object], [Object] ],
+47 silly install resolved     _npmOperationalInternal:
+47 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+47 silly install resolved        tmp: 'tmp/nvm-0.0.4.tgz_1470176095991_0.07210978143848479' },
+47 silly install resolved     deprecated: 'This is NOT the correct nvm. Visit http://nvm.sh and use the curl command to install it.',
+47 silly install resolved     directories: {},
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/nvm/-/nvm-0.0.4.tgz' } ]
+48 info install nvm@0.0.4 into /usr/local/lib
+49 info installOne nvm@0.0.4
+50 verbose installOne of nvm to /usr/local/lib not in flight; installing
+51 verbose lock using /home/malguzt/.npm/_locks/nvm-68b9e48761174fe5.lock for /usr/local/lib/node_modules/nvm
+52 silly install write writing nvm 0.0.4 to /usr/local/lib/node_modules/nvm
+53 verbose unbuild lib/node_modules/nvm
+54 silly gentlyRm /usr/local/lib/node_modules/nvm is being purged from base /usr/local
+55 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/nvm
+56 verbose tar unpack /home/malguzt/.npm/nvm/0.0.4/package.tgz
+57 verbose tar unpacking to /usr/local/lib/node_modules/nvm
+58 silly gentlyRm /usr/local/lib/node_modules/nvm is being purged
+59 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/nvm
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 error tar.unpack untar error /home/malguzt/.npm/nvm/0.0.4/package.tgz
+62 verbose unlock done using /home/malguzt/.npm/_locks/nvm-68b9e48761174fe5.lock for /usr/local/lib/node_modules/nvm
+63 verbose fstream_path /usr/local/lib/node_modules/nvm
+64 verbose fstream_type Directory
+65 verbose fstream_class DirWriter
+66 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/nvm'
+66 verbose stack     at Error (native)
+67 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+67 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+67 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+68 verbose cwd /home/malguzt/mayraProyectos/proyectoUno/scl-2018-05-bc-core-am
+69 error Linux 3.16.0-38-generic
+70 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "-g" "install" "nvm"
+71 error node v4.2.2
+72 error npm  v2.14.7
+73 error path /usr/local/lib/node_modules/nvm
+74 error code EACCES
+75 error errno -13
+76 error syscall mkdir
+77 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/nvm'
+77 error     at Error (native)
+77 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/nvm']
+77 error   errno: -13,
+77 error   code: 'EACCES',
+77 error   syscall: 'mkdir',
+77 error   path: '/usr/local/lib/node_modules/nvm',
+77 error   fstream_type: 'Directory',
+77 error   fstream_path: '/usr/local/lib/node_modules/nvm',
+77 error   fstream_class: 'DirWriter',
+77 error   fstream_stack:
+77 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+77 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+77 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+78 error Please try running this command again as root/Administrator.
+79 verbose exit [ -13, true ]
+80 verbose unbuild lib/node_modules/nvm
+81 silly gentlyRm /usr/local/lib/node_modules/nvm is being purged from base /usr/local
+82 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/nvm

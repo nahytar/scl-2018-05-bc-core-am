@@ -1,52 +1,53 @@
 #titulo {
-    text-align: center;
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom: 80px;
+  text-align: center;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 #content {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
+
 #posiciones {
-    margin: 10px 0;
-     margin-bottom: 80px;
+  margin: 10px 0;
+  margin-bottom: 80px;
 }
 
 #areaDecodificado {
-    float: left; 
-    resize: none;   
+  float: left;
+  resize: none;
 }
 
 #areaCodificado {
-    float: right;
-    resize: none;
+  float: right;
+  resize: none;
 }
 
 body {
-    background: url(img/fondo.jpg);
+  background: url(img/fondo.jpg);
 }
 
 #button-posiciones {
-    background-color: white;
+  background-color: white;
 }
 
 #buttonReversible {
-    background-color: white;
-    margin: 0 7%;
+  background-color: white;
+  margin: 0 7%;
 }
 
 #buttonReversible:hover {
-    background-color: rgb(102, 179, 230);
-    box-shadow: 10px 3px 19px 9px rgba(0,0,0,0.81);
+  background-color: rgb(102, 179, 230);
+  box-shadow: 10px 3px 19px 9px rgba(0, 0, 0, 0.81);
 }
 
 button, textarea, input, #titulo {
-    border-radius: 7px; 
-    box-shadow: 6px 3px 19px 9px rgba(0,0,0,0.81);
+  border-radius: 7px;
+  box-shadow: 6px 3px 19px 9px rgba(0, 0, 0, 0.81);
 }
 
 #inputPosiciones {
-    width: 142px;
+  width: 142px;
 }

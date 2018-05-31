@@ -1,11 +1,11 @@
 window.cipher = {
   // funcion encode con prametros text y positions
-  encode: (text, positions)=> {
+  encode: (text, positions) => {
     let charCode;
     // let result es una variable que se inicializa con un string vacio
     let result = "";
     // el buble for itera por cada letra del string "text"
-    for(let i = 0; i < text.length; i++) {
+    for (let i = 0; i < text.length; i++) {
       // el metodo charCodeAt me pasa la posicion del caracter i en el codigo ascii
       charCode = (text.charCodeAt(i) - 65 + positions) % 26 + 65;
       // concatena los caracteres en base charCode calculado

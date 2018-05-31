@@ -18,6 +18,8 @@ window.onload = function () {
   });
   // espera el evento que se dispara cuando se levanta una tecla
   areaDecodificado.addEventListener("keyup", function (event) {
+    // toma el valor del area decodificado lo pasa a mayuscula y lo vuelve a asignar
+    areaDecodificado.value = areaDecodificado.value.toUpperCase();
     //  se lee el valor actual del offset y el parseInt lo convierte al tipo
     let positions = parseInt(inputPosiciones.value);
     // se llama a encode con el texto del area decodificada para asignarlo en el area codificada
@@ -25,6 +27,7 @@ window.onload = function () {
   })
 
   areaCodificado.addEventListener("keyup", function (event) {
+    areaCodificado.value = areaCodificado.value.toUpperCase();
     let positions = parseInt(inputPosiciones.value);
     areaDecodificado.value = cipher.decode(areaCodificado.value, positions);
   })

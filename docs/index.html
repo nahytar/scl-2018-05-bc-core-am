@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <section id="content">
+    <header class="row">
+      <div class="col-12"></div>
+      <h1 class="titulo">Codificador y Decodificador de Mensajes</h1>
+    </header>
+    <div class="row">
+      <div id="posiciones" class="col-2">
+        <!-- donde carga el usuario cuantos lugares va a correr -->
+        <input id="inputPosiciones" placeholder="Espacios a desplazarse" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h4 class="titulo">Mensaje decodificado</h4>
+        <!-- espacio para escribir texto codificado y a decodificar -->
+        <textarea id="areaDecodificado" rows="4" cols="50" placeholder="Ingresa tu texto para codificar"></textarea>
+      </div>
+      <div class="col-6">
+        <h4 class="titulo">Mensaje codificado</h4>
+        <textarea id="areaCodificado" placeholder="Ingresa tu texto para decodificar" rows="4" cols="50"></textarea>
+      </div>
+    </div>
+  </section>
+  <!--DIV que va a traer la informacion del DOM, NO BORRAR-->
+  <div id="root"></div>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

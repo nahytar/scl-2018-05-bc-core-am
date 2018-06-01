@@ -1,0 +1,92 @@
+.titulo {
+  text-align: center;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 96%;
+}
+
+#content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+#posiciones {
+  margin: 10px 0;
+  margin-bottom: 80px;
+}
+
+#areaDecodificado, #areaCodificado {
+  width: 95%;
+  margin: auto;
+  height: 100px;
+}
+
+body {
+  background: url(img/fondo.jpeg);
+}
+
+#button-posiciones {
+  background-color: white;
+}
+
+#buttonReversible {
+  background-color: white;
+  margin: 0 7%;
+}
+
+#buttonReversible:hover {
+  background-color: rgb(102, 179, 230);
+  box-shadow: 10px 3px 19px 9px rgba(0, 0, 0, 0.81);
+}
+
+button, textarea, input, .titulo {
+  border-radius: 7px;
+  box-shadow: 6px 3px 19px 9px rgba(0, 0, 0, 0.81);
+}
+
+#inputPosiciones {
+  width: 142px;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.col-2 {
+  /* (2/12) x 100 */
+  width: 16.666666667%;
+}
+
+.col-6 {
+  /* (6/12) x 100 */
+  width: 50%;
+}
+
+.col-12 {
+  /* (12/12) x 100 */
+  width: 100%;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+}

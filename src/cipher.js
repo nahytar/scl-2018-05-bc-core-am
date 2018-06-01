@@ -4,6 +4,8 @@ window.cipher = {
     let charCode;
     // let result es una variable que se inicializa con un string vacio
     let result = "";
+    // se convierte el texto de minuscula a mayuscula
+    text = text.toUpperCase();
     // el buble for itera por cada letra del string "text"
     for (let i = 0; i < text.length; i++) {
       // el metodo charCodeAt me pasa la posicion del caracter i en el codigo ascii
@@ -17,10 +19,11 @@ window.cipher = {
   decode: (text, positions) => {
     let charCode;
     let result = "";
+    text = text.toUpperCase();
     for (let i = 0; i < text.length; i++) {
 
       charCode = text.charCodeAt(i) - 65 - positions % 26 + 65;
-      // si el charCode quedo antes que el rango alfabeto del codigo ascii se suma26 para volver a poderlo en rango
+      // si el charCode quedo antes que el rango alfabeto del codigo ascii se suma 26 para volver a poderlo en rango
       if (charCode < 65) {
         charCode += 26;
       }
